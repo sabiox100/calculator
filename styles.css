@@ -1,0 +1,89 @@
+button {
+    width: 24%;
+    height: 100%;
+    border-radius: 15px;
+    
+}
+button:hover {
+    background-color: darkslategrey;
+    height: 98%;
+    width: 23.5%;
+}
+
+.centre {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(250, 193, 89);
+    margin-bottom: 5px;
+}
+.container {
+    height: 60vh;
+    width: 60vh;
+    outline: solid rgb(114, 90, 44) 1px;
+    background-color: rgb(243, 206, 136);
+}
+.display {
+    height: 20%;
+    background-color: linen;
+}
+.displayOne {
+    height: 49%;
+}
+.displayTwo {
+    height: 49%;
+    text-align: end;
+}
+
+.rowOne {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 14.28%;
+
+}
+
+
+
+.rowTwo {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 14.28%;
+}
+
+.rowThree {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 14.28%;
+}
+
+.rowFour {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 14.28%;
+}
+.rowFive {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 14.28%;
+}
+
+#equalBtn {
+    width: 49%;
+    background-color: teal;
+}
+#acBtn, #negativeBtn, #backBtn {
+    background-color: peru;
+}
+#equalBtn:hover{
+    background-color: green;
+}
+#acBtn:hover {
+    background-color: red;
+}
+#divideBtn, #multiplyBtn, #plusBtn, #minusBtn {
+    background-color: rgba(38, 117, 170, 0.212);
+}
+#divideBtn:hover, #multiplyBtn:hover, #plusBtn:hover, #minusBtn:hover {
+    background-color: goldenrod;
+}

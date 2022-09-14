@@ -56,7 +56,7 @@ const buttons = document.querySelectorAll('.button');
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
         var dataAttribute = button.getAttribute('data-key');
-        displayOne.innerHTML+= dataAttribute;
+        displayOne.textContent+= dataAttribute;
         myArray.push(dataAttribute);
 });
 });
@@ -91,7 +91,7 @@ function convertInput() {
     }
 }
 // function reset () {
-//     myArray.pop()
+//     myArray.splice(0, myArray.length);
 //     myAnswer = 0;
 //     displayOne.innerHTML = "";
 // }
@@ -102,9 +102,20 @@ equalBtn.addEventListener ('click', () => {
     displayTwo.textContent = myAnswer;
 
 });
-// const acBtn = document.querySelector('#acBtn');
-// acBtn.addEventListener ('click', () => {
-//     reset();
 
+// function to clear everything
+const acBtn = document.querySelector('#acBtn');
+acBtn.addEventListener ('click', () => {
+    myArray.splice(0, myArray.length);
+    myAnswer = 0;
+    displayOne.textContent = "";
+    displayTwo.textContent = "";
+});
 
-// });
+// function to backspace
+const backBtn = document.querySelector('#backBtn');
+backBtn.addEventListener ('click', () => {
+    var myDeletedArray = myArray.slice(0,myArray.length-1).join('');
+    myArray.splice(myArray.length-1, 1);
+    displayOne.textContent = myDeletedArray;
+});

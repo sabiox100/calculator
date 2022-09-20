@@ -15,14 +15,14 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(250, 193, 89);
+    background:linear-gradient(to right,pink,black);
     margin-bottom: 5px;
 }
 .container {
     height: 60vh;
     width: 60vh;
-    outline: solid rgb(114, 90, 44) 1px;
-    background-color: rgb(243, 206, 136);
+    /* outline: solid rgb(114, 90, 44) 1px; */
+    background:linear-gradient(to left, pink, black);
 }
 .display {
     height: 20%;

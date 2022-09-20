@@ -90,11 +90,7 @@ function convertInput() {
         operate(operator,firstString,lastString);
     }
 }
-// function reset () {
-//     myArray.splice(0, myArray.length);
-//     myAnswer = 0;
-//     displayOne.innerHTML = "";
-// }
+
 const equalBtn = document.querySelector('#equalBtn');
 equalBtn.addEventListener ('click', () => {
     convertInput();
